@@ -25,6 +25,7 @@ game_over = False
 
 clock = pygame.time.Clock()
 
+
 while not game_over:
     
     for event in pygame.event.get():
@@ -65,6 +66,9 @@ while not game_over:
         
         e_x = enemy_pos[0]
         e_x = enemy_pos[1]
+        
+        if (e_x >= p_x and e_x < (p_x + player_size)) or (p_x >= e_x and p_x < (e_x + enemy_syze))
+         
     
     pygame.display.update()
        
